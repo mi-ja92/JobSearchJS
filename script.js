@@ -8,7 +8,7 @@ const addToDom = (jobs) => {
     listJobs.appendChild(item);
     item.classList.add("list-group-item");
     item.appendChild(link);
-    link.href = "http://" + jobs.website;
+    link.href = jobs.website;
     const text = document.createTextNode(jobs.title);
     link.appendChild(text);
     link.target = "_blank";
